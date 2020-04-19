@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RPGXamarin.MainGamePage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="Center">
+                <Label x:Name="GameTitleText"
+                Text="Adventure Game" 
+                       FontSize="40"
+                       FontAttributes="Bold, Italic" />
+                <Label x:Name="GameCharacterNameText"
+                       IsVisible="False"
+               Text="XXXXXXX" />
+                <Label x:Name="GameCharacterHealthText"
+                       IsVisible="False"
+               Text="Health: " />
+                <Label x:Name="GameCharacterMagicText"
+                       IsVisible="False"
+               Text="Magic: " />
+                <Label x:Name="GameMonsterHealthText"
+                       IsVisible="False"
+               Text="MonsterHealth: " />
+                    <Label x:Name="GamePlayerDamageText"
+                       IsVisible="False"
+               Text="Player Damage: " />
+                    <Label x:Name="GameMonsterDamageText"
+                       IsVisible="False"
+               Text="Monster Damage: " />
+                
+                </StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" >
+                    <Label x:Name="GameChooseCharacterText"                 
+                       Text="Choose a character" />
+                </StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center" HeightRequest="50" WidthRequest="50">
+                    <Image x:Name="GameSnakeImage"
+                       IsVisible="False"
+                   Source="Cobra"                    
+                    />
+
+                    <Image x:Name="GameSpiderImage"
+                       IsVisible="False"
+                   Source="Spider"
+                    />
+
+                    <Image x:Name="GameBirdImage"
+                       IsVisible="False"
+                   Source="Coctrice"
+                    />
+
+                    <Image x:Name="GameWolfImage"
+                       IsVisible="False"                    
+                   Source="GreyWolf"
+                    />
+
+                    <Image x:Name="GameImpImage"
+                       IsVisible="False"                    
+                   Source="Imp"                  
+                    />
+
+                    <Image x:Name="GameVikingImage"
+                       IsVisible="False"                    
+                   Source="Kyzoku"                    
+                    />
+
+                    <Image x:Name="GameOgreImage"
+                       IsVisible="False"                   
+                   Source="GreenOgre"                  
+                    />
+
+                    <Image x:Name="GameSkeletonImage"
+                       IsVisible="False"                   
+                   Source="Bone"                 
+                    />
+
+                    <Image x:Name="GameGatorImage"
+                       IsVisible="False"                    
+                   Source="Gator"                
+                    />
+
+                    <Image x:Name="GameWizardImage"
+                       IsVisible="False"                    
+                   Source="Wizard"               
+                    />
+                    </StackLayout>
+                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                    <Image x:Name="GameFighterImage"                    
+                   Source="Fighter"                    
+                    />
+                    <Button x:Name="FighterChosenButton"
+	                Text="Fighter"
+	                Clicked="FighterChosenButton_Clicked"/>
+
+                    <Image x:Name="GameThiefImage"                    
+                   Source="Thief"                    
+                    />
+                    <Button x:Name="ThiefChosenButton"
+	                Text="Thief"
+	                Clicked="ThiefChosenButton_Clicked"/>
+
+                    <Image x:Name="GameBlackBeltImage"                    
+                   Source="BlackBelt"                    
+                    />
+                    <Button x:Name="BlackBeltChosenButton"
+	                Text="Black Belt"
+	                Clicked="BlackBeltChosenButton_Clicked"/>
+
+                    <Image x:Name="GameRedMageImage"                    
+                   Source="RedMage"                    
+                    />
+                    <Button x:Name="RedMageChosenButton"
+	                Text="Red Mage"
+	                Clicked="RedMageChosenButton_Clicked"/>
+
+                    <Image x:Name="GameBlackMageImage"                    
+                   Source="BlackMage"                   
+                    />
+                    <Button x:Name="BlackMageChosenButton"
+	                Text="Black Mage"
+	                Clicked="BlackMageChosenButton_Clicked"/>
+                    <Image x:Name="GameWhiteMageImage"                    
+                   Source="WhiteMage" 
+                    
+                    />
+                    <Button x:Name="WhiteMageChosenButton"
+	                Text="White Mage"
+	                Clicked="WhiteMageChosenButton_Clicked"
+                    />
+                </StackLayout>
+                <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+                <Label x:Name="GameCharacterNameInstructionsText"
+                       IsVisible="False"
+               Text="Enter a name for your adventurer" 
+                    />
+                <Entry x:Name="GameCharacterNameInputTextBox"
+                       IsVisible="False"
+               WidthRequest="150"/>
+                    <Label x:Name="GameExpositionText"
+               IsVisible="False"
+               Text="You find yourself at the entrance to an old cave. There are rumors of an immense treasure located within. You are in search of fame and fortune and this cave promises to be a good start to your adventure. Click the start adventure button to begin your adventure."
+
+                    />
+                </StackLayout>
+                <StackLayout  VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+                <Button x:Name="GameCharacterNameChosenButton"
+                        IsVisible="False"
+	            Text="Next"
+	            Clicked="GameCharacterNameChosenButton_Clicked"
+                        />
+                <Button x:Name="GameStartAdventureButton"
+                        IsVisible="False"
+	            Text="Start Adventure"
+	            Clicked="GameStartAdventureButton_Clicked"
+            />
+                <Button x:Name="GameExploreButton"
+                        IsVisible="False"
+	            Text="Explore"
+	            Clicked="GameExploreButton_Clicked"
+            />
+                    <Button x:Name="GameAttackButton"
+                        IsVisible="False"
+	            Text="Attack"
+	            Clicked="GameAttackButton_Clicked"
+            />
+                    <Button x:Name="GameRageAttackButton"
+                        IsVisible="False"
+	            Text="Rage Attack"
+	            Clicked="GameRageAttackButton_Clicked"
+            />
+                    <Button x:Name="GamePilferAttackButton"
+                        IsVisible="False"
+	            Text="Pilfer Strike"
+	            Clicked="GamePilferAttackButton_Clicked"
+            />
+                    <Button x:Name="GamePummelAttackButton"
+                        IsVisible="False"
+	            Text="Pummel"
+	            Clicked="GamePummelAttackButton_Clicked"
+            />
+                    <Button x:Name="GameFireBallAttackButton"
+                        IsVisible="False"
+	            Text="FireBall"
+	            Clicked="GameFireBallAttackButton_Clicked"
+            />
+                    <Button x:Name="GameLightningAttackButton"
+                        IsVisible="False"
+	            Text="Lightning"
+	            Clicked="GameLightningAttackButton_Clicked"
+            />
+                    <Button x:Name="GameDarknessAttackButton"
+                        IsVisible="False"
+	            Text="Darkness"
+	            Clicked="GameDarknessAttackButton_Clicked"
+            />
+                    <Button x:Name="GameHarmAttackButton"
+                        IsVisible="False"
+	            Text="Harm"
+	            Clicked="GameHarmAttackButton_Clicked"
+            />
+                    <Button x:Name="GameDefendButton"
+                        IsVisible="False"
+	            Text="Defend"
+	            Clicked="GameDefendButton_Clicked"
+            />
+                    <Button x:Name="GameRunAwayButton"
+                        IsVisible="False"
+	            Text="RunAway"
+	            Clicked="GameRunAwayButton_Clicked"
+            />
+                    <Button x:Name="GameMonsterAttackRoundButton"
+                        IsVisible="False"
+	            Text="Next"
+	            Clicked="GameMonsterAttackRoundButton_Clicked"
+            />
+                    <Button x:Name="GameRestButton"
+                        IsVisible="False"
+	            Text="Rest"
+	            Clicked="GameRestButton_Clicked"
+            />
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

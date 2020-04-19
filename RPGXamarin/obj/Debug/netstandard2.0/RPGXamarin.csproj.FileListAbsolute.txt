@@ -1,0 +1,16 @@
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\IntroPage.xaml.g.cs
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\MainGamePage.xaml.g.cs
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\StartScreenPage.xaml.g.cs
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\TabbedChooseCharacterPage.xaml.g.cs
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\RPGXamarin.AssemblyInfoInputs.cache
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\RPGXamarin.AssemblyInfo.cs
+D:\BSU\RPGXamarin\RPGXamarin\bin\Debug\netstandard2.0\RPGXamarin.deps.json
+D:\BSU\RPGXamarin\RPGXamarin\bin\Debug\netstandard2.0\RPGXamarin.dll
+D:\BSU\RPGXamarin\RPGXamarin\bin\Debug\netstandard2.0\ref\RPGXamarin.dll
+D:\BSU\RPGXamarin\RPGXamarin\bin\Debug\netstandard2.0\RPGXamarin.pdb
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\XamlC.stamp
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\RPGXamarin.dll
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\ref\RPGXamarin.dll
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\RPGXamarin.pdb
+D:\BSU\RPGXamarin\RPGXamarin\obj\Debug\netstandard2.0\RPGXamarin.csprojAssemblyReference.cache

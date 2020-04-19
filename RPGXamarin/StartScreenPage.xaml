@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RPGXamarin.StartScreenPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="GameTitleText"
+               Text="Adventure Game" 
+               HorizontalOptions="Center"
+               VerticalOptions="StartAndExpand"
+               FontSize="40"
+               FontAttributes="Bold, Italic"
+                   />
+            
+            <Label x:Name="GameInstructionsText"
+               Text="Tap the start button to play" 
+               HorizontalOptions="Center"
+               VerticalOptions="CenterAndExpand" 
+               FontSize="25"
+               FontAttributes="Bold, Italic"
+                   />
+
+            <Button x:Name="GameStartButton"
+	            Text="Start Game"
+                HorizontalOptions="Center"
+	            VerticalOptions="EndAndExpand"
+	            Clicked="GameStartButton_Clicked"
+            />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

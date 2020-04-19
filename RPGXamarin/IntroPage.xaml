@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="RPGXamarin.IntroPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label x:Name="GameTitleText"
+               Text="Adventure Game" 
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="StartAndExpand" />
+            <Label x:Name="GameExpositionText"
+               Text="You find yourself at the entrance to an old cave. There are rumors of an immense treasure located within. You are in search of fame and fortune and this cave promises to be a good start to your adventure. Click the explore button to begin your adventure."
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand" />
+            <!--<Button x:Name="GameExploreButton"
+	            Text="Explore"
+                HorizontalOptions="CenterAndExpand"
+	            VerticalOptions="EndAndExpand"
+	            Clicked="GameExploreButton_Clicked"
+            />-->
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
