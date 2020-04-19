@@ -91,6 +91,9 @@ namespace RPGXamarin
         public bool monsterHitPlayer = false;
         public bool hasMagic = true;
 
+        //These methods are all called when the respective button is tapped on by the player. 
+        //They show or hide objects on the screen which are relevant to the chosen character such as health or magic.
+
         public void FighterChosenButton_Clicked(object sender, EventArgs e)
         {
             ShowNameScreen();
@@ -163,6 +166,7 @@ namespace RPGXamarin
             GameCharacterMagicText.Text = "Magic: " + whiteMageMagic;
         }
 
+        //This method hides the character choose screen and shows the character naming screen.
         public void ShowNameScreen()
         {
             GameChooseCharacterText.IsVisible = false;
@@ -172,6 +176,7 @@ namespace RPGXamarin
             GameCharacterNameChosenButton.IsVisible = true;
         }
 
+        //This method hides all character images and buttons.
         public void HideCharacters()
         {
             GameFighterImage.IsVisible = false;
@@ -188,6 +193,8 @@ namespace RPGXamarin
             BlackMageChosenButton.IsVisible = false;
             WhiteMageChosenButton.IsVisible = false;
         }
+
+        //This method hides all monster images.
         public void hideMonsters()
         {
             GameSnakeImage.IsVisible = false;
@@ -202,6 +209,8 @@ namespace RPGXamarin
             GameWizardImage.IsVisible = false;
         }
 
+        //This method shows the battle command screen and displays different buttons depending on what character is chosen. 
+        //When the character is chosen, a boolean relevant to that character is set to true. This tells the app what buttons and images to show.
         public void showBattleCommands()
         {
             GameExploreButton.IsVisible = false;
@@ -241,6 +250,7 @@ namespace RPGXamarin
             }
         }
 
+        //This method hides battle related buttons.
         public void hideBattleCommands()
         {
             GameExploreButton.IsVisible = true;
@@ -258,6 +268,7 @@ namespace RPGXamarin
             GameHarmAttackButton.IsVisible = false;
         }
 
+        //This method hides the battle commands and is called after the player taps a button during battle. It allows the monster to take an attack round.
         public void showNextButton()
         {
             GameExploreButton.IsVisible = false;
@@ -274,6 +285,7 @@ namespace RPGXamarin
             GameHarmAttackButton.IsVisible = false;
         }
 
+        //This method randomly sets the monster's health between 50 and 100.
         public void setMonsterHealth()
         {
             Random randomMonsterHealth = new Random();
@@ -283,6 +295,7 @@ namespace RPGXamarin
             GameMonsterHealthText.Text = "Monster Health: " + monsterHealth;
         }
 
+        //This method handles the monster's attack round by choosing a number from a range of numbers for how much damage the monster does and whether the monster hits the player.
         public void monsterAttacks()
         {
             Random randomMonsterDamage = new Random();
@@ -386,6 +399,8 @@ namespace RPGXamarin
 
         }
 
+        //This method checks to see if the monster's health is below or equal to zero. If it is, the monsters and battle commands are hidden.
+        //The rest screen is then shown where the player can either explore or rest.
         public void isMonsterDead()
         {
             if (monsterHealth <= 0)
@@ -399,6 +414,7 @@ namespace RPGXamarin
             }
         }
 
+        //This method hides the character naming instructions and shows the exposition text which sets up the story.
         public void GameCharacterNameChosenButton_Clicked(object sender, EventArgs e)
         {
             GameCharacterNameInstructionsText.IsVisible = false;
@@ -409,6 +425,7 @@ namespace RPGXamarin
             GameStartAdventureButton.IsVisible = true;
         }
 
+        //This method changes the exposition text and hides the start adventure button. It also shows the explore button.
         public void GameStartAdventureButton_Clicked(object sender, EventArgs e)
         {
             GameExpositionText.Text = "Now that you have chosen a character, You may begin your journey.";
@@ -416,6 +433,8 @@ namespace RPGXamarin
             GameExploreButton.IsVisible = true;
         }
 
+        //This method chooses a number between 1 and 11 when the button is tapped and depending on the number which is chosen, a specified monster's image is shown on the screen.
+        //Either a monster is shown on the screen, or a random scenario is chosen such as the player encountering an empty room.
         public void GameExploreButton_Clicked(object sender, EventArgs e)
         {
             hideMonsters();
@@ -497,6 +516,7 @@ namespace RPGXamarin
             }
         }
 
+        //This method handles the player's attack round by choosing a number from a range of numbers for how much damage the player does and whether the player hits the monster.
         public void GameAttackButton_Clicked(object sender, EventArgs e)
         {
             Random playerHitRandom = new Random();
@@ -605,6 +625,7 @@ namespace RPGXamarin
 
         }
 
+        //This method adds 25 points to the character's specific power type.
         public void GameDefendButton_Clicked(object sender, EventArgs e)
         {
             showNextButton();
@@ -678,6 +699,7 @@ namespace RPGXamarin
             GameExpositionText.Text = "You concentrate hard and regain some power!";
         }
 
+        //This method determines whether or not a player can run away by choosing a random value. If a value is above or below a certain number, the player either fails or successfully runs. 
         public void GameRunAwayButton_Clicked(object sender, EventArgs e)
         {
             Random runAwayRandom = new Random();
@@ -697,6 +719,7 @@ namespace RPGXamarin
             }
         }
 
+        //This method calls the method which handles monster attacks and then shows the player's battle commands.
         public void GameMonsterAttackRoundButton_Clicked(object sender, EventArgs e)
         {
             monsterAttacks();
@@ -704,6 +727,7 @@ namespace RPGXamarin
             showBattleCommands();
         }
 
+        //This method fully restores the health of the player's character as well as their specific power type.
         public void GameRestButton_Clicked(object sender, EventArgs e)
         {
             fighterCurrentHealth = fighterCurrentHealth + 100;
@@ -784,6 +808,8 @@ namespace RPGXamarin
             GameExpositionText.Text = "You feel completely revitalized!";
         }
 
+        //These next methods handle each of the character's special attacks. They are handled in a similar way to the regular attacks. 
+        //The difference is that these attacks are stronger, get the player gold, or use magical energy.
         public void GameRageAttackButton_Clicked(object sender, EventArgs e)
         {
             Random playerHitRandom = new Random();
